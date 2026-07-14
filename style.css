@@ -218,6 +218,7 @@ h1.product-title { font-weight: 800; font-size: 2rem; line-height: 1.3; letter-s
 .btn-pay.crypto { background: #950301; }
 .btn-pay.crypto:hover { background: #cb1816; }
 [data-theme="dark"] .btn-pay.crypto { background: #570d0c; }
+[data-theme="dark"] .btn-pay.crypto:hover { background: #ff1500; }
 .btn-pay.cards { background: #d15210; }
 .btn-pay.cards:hover { background: #ff0c0c; }
 .buy-note { font-size: 0.82rem; color: var(--text-muted); margin-top: 14px; }
