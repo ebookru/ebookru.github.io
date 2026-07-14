@@ -132,6 +132,7 @@ body {
 }
 .btn-buy:hover { background: #a92909; color: #fff; }
 .btn-buy:disabled { opacity: 0.4; }
+[data-theme="dark"] .btn-buy { background: #791b03; color: #f5f5f5; }
 
 footer {
   background: var(--bg-secondary);
