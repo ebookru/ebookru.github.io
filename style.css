@@ -110,12 +110,13 @@ body {
 }
 .product-card h3 { font-size: 1.25rem; font-weight: 700; margin-bottom: 10px; }
 .link-more {
-  font-size: 0.85rem;
-  color: var(--text-muted);
+  font-size: 1.15rem;
+  color: #c30808;
   text-decoration: none;
-  font-weight: 500;
+  font-weight: 600;
   margin-bottom: 18px;
 }
+[data-theme="dark"] .link-more { color: #ffe098; }
 .link-more:hover { text-decoration: underline; }
 .product-price-label { font-size: 0.85rem; color: var(--text-muted); margin-bottom: 4px; line-height: 1.5; }
 .product-price-value { font-size: 2rem; font-weight: 800; color: var(--text); margin-bottom: 20px; }
