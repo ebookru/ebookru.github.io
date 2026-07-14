@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>document.documentElement.setAttribute('data-theme', localStorage.getItem('theme') || 'light');</script>
+<title>Smart Things Bookstore — базы знаний по ИИ, трейдингу и коду для Obsidian</title>
+<meta name="description" content="Smart Things Bookstore — базы знаний по ИИ, трейдингу и коду для Obsidian">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=optional" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand py-3">
+  <div class="container d-flex justify-content-between align-items-center">
+    <a href="index.html" class="text-decoration-none">
+      <span class="brand-name">Smart Things Bookstore</span>
+      <span class="brand-tagline">готовые базы знаний для тех, кто идёт вперёд</span>
+    </a>
+    <div class="d-flex align-items-center">
+      <div class="social-icons">
+        <a href="#" title="Telegram"><i class="bi bi-telegram"></i></a>
+        <a href="#" title="Boosty"><i class="bi bi-cup-hot"></i></a>
+        <a href="#" title="Bastyon"><i class="bi bi-globe2"></i></a>
+        <a href="#" title="X"><i class="bi bi-twitter-x"></i></a>
+      </div>
+      <button class="theme-toggle" id="themeToggle"><i class="bi bi-moon-stars"></i> Тема</button>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="container hero-inner">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-7">
+        <h1>Книги и статьи</h1>
+        <p class="hero-desc">Smart Things Bookstore — готовые базы знаний для тех, кто хочет научиться работать с ИИ (ищет знания и желает получить реальный старт в освоении агентов), с криптовалютой и трейдингом (знания, которые пережили много рыночных циклов — практические знания и советы из книг авторов, которые подтвердили свои методы деньгами, плюс системный подход) и для программистов (начинающих или профи, кто учится или ищет знания без перелопачивания всего интернета). Мы уже всё приготовили — берите и пользуйтесь!</p>
+        <p class="lead">Собранные, переведённые и каталогизированные архивы для Obsidian: разверни готовый Second Brain и получи структурированные знания вместо потери времени на поиск информации по разрозненным источникам</p>
+        <a href="#catalog" class="btn btn-brand">Смотреть каталог</a>
+      </div>
+      <div class="col-lg-5">
+        <div class="graph-wrap">
+          <svg id="graphSvg" viewBox="0 0 500 420"></svg>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="catalog-section" id="catalog">
+  <div class="container">
+    <div class="row g-4 justify-content-center">
+      <div class="col-md-4 col-sm-6">
+        <div class="product-card">
+          <div class="product-icon"><i class="bi bi-journal-bookmark"></i></div>
+          <h3>Статьи об ИИ</h3>
+          <a href="product-ai.html" class="link-more">Узнать больше ↗</a>
+          <div class="product-price-label">Цена за весь архив<br>(1861 статья):</div>
+          <div class="product-price-value">$55</div>
+          <button class="btn-buy">Купить</button>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6">
+        <div class="product-card" style="opacity:0.55;">
+          <div class="product-icon"><i class="bi bi-graph-up-arrow"></i></div>
+          <h3>Статьи о трейдинге</h3>
+          <a href="#" class="link-more">Узнать больше ↗</a>
+          <div class="product-price-label">Скоро</div>
+          <div class="product-price-value">—</div>
+          <button class="btn-buy" disabled>Купить</button>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6">
+        <div class="product-card" style="opacity:0.55;">
+          <div class="product-icon"><i class="bi bi-code-slash"></i></div>
+          <h3>Статьи для программистов</h3>
+          <a href="#" class="link-more">Узнать больше ↗</a>
+          <div class="product-price-label">Скоро</div>
+          <div class="product-price-value">—</div>
+          <button class="btn-buy" disabled>Купить</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="d-flex flex-wrap justify-content-between align-items-center">
+      <div>Smart Things Bookstore<br>© 2026 Smart Things Bookstore</div>
+      <div>
+        <a href="#catalog">Каталог</a>
+        <a href="#">О нас</a>
+        <a href="#">Блог</a>
+      </div>
+      <div class="social-icons">
+        <a href="#"><i class="bi bi-telegram"></i></a>
+        <a href="#"><i class="bi bi-cup-hot"></i></a>
+        <a href="#"><i class="bi bi-globe2"></i></a>
+        <a href="#"><i class="bi bi-twitter-x"></i></a>
+      </div>
+    </div>
+    <div class="footer-legal">
+      Цифровой товар, доступ предоставляется сразу после оплаты. Возврат не предусмотрен для скачанных файлов.
+    </div>
+  </div>
+</footer>
+
+<script src="script.js" defer></script>
+
+</body>
+</html>
