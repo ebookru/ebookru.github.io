@@ -126,13 +126,14 @@ body {
   background: #5b281b;
   color: var(--bg);
   border: none;
-  border-radius: 999px;
-  padding: 10px 32px;
+  border-radius: 15px;
+  padding: 16px 56px;
   font-weight: 600;
 }
 .btn-buy:hover { background: #a92909; color: #fff; }
 .btn-buy:disabled { opacity: 0.4; }
-[data-theme="dark"] .btn-buy { background: #791b03; color: #f5f5f5; }
+[data-theme="dark"] .btn-buy { background: #510808; color: #f5f5f5; }
+[data-theme="dark"] .btn-buy:hover { background: #d20000; color: #f5f5f5; }
 
 footer {
   background: var(--bg-secondary);
