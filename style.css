@@ -189,6 +189,8 @@ h1.product-title { font-weight: 800; font-size: 2rem; line-height: 1.3; letter-s
 @media (min-width: 768px) { .split-section .divider { display: block; } }
 .split-title { font-weight: 800; font-size: 1.7rem; letter-spacing: -0.3px; }
 .split-text { color: var(--text-muted); font-size: 1rem; line-height: 1.7; }
+.spl-tex { padding: 1em 0 0; text-align: center; font-size: 1.45em; color: var(--text-muted); }
+.spl-tex a { color: var(--accent2); }
 
 .categories-list { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 16px; }
 .categories-list span { background: var(--card-bg); border-radius: 999px; padding: 8px 16px; font-size: 0.85rem; color: var(--text); }
