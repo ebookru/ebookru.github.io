@@ -81,16 +81,17 @@
     </a>
     <div class="d-flex align-items-center">
       <div class="social-icons">
-        <a href="#" title="Telegram"><i class="bi bi-telegram"></i></a>
-        <a href="#" title="Boosty"><i class="bi bi-cup-hot"></i></a>
-        <a href="#" title="Bastyon"><i class="bi bi-globe2"></i></a>
-        <a href="#" title="X"><i class="bi bi-twitter-x"></i></a>
+        <a href="#" title="Telegram" aria-label="Telegram"><i class="bi bi-telegram"></i></a>
+        <a href="#" title="Boosty" aria-label="Boosty"><i class="bi bi-cup-hot"></i></a>
+        <a href="#" title="Bastyon" aria-label="Bastyon"><i class="bi bi-globe2"></i></a>
+        <a href="#" title="X" aria-label="X (Twitter)"><i class="bi bi-twitter-x"></i></a>
       </div>
       <button class="theme-toggle" id="themeToggle"><i class="bi bi-moon-stars"></i> Тема</button>
     </div>
   </div>
 </nav>
 
+<main>
 <div class="container">
   <div class="breadcrumb-nav">
     <a href="index.html">Каталог</a> / Статьи об ИИ
@@ -136,9 +137,11 @@
           </div>
           <button class="carousel-control-prev" type="button" data-bs-target="#scanCarousel" data-bs-slide="prev">
             <span class="carousel-control-prev-icon"></span>
+            <span class="visually-hidden">Предыдущий слайд</span>
           </button>
           <button class="carousel-control-next" type="button" data-bs-target="#scanCarousel" data-bs-slide="next">
             <span class="carousel-control-next-icon"></span>
+            <span class="visually-hidden">Следующий слайд</span>
           </button>
         </div>
       </div>
@@ -214,11 +217,12 @@
 </div>
 
 <div class="lightbox-overlay" id="lightboxOverlay">
-  <button class="lightbox-close" id="lightboxClose">&times;</button>
-  <button class="lightbox-nav lightbox-prev" id="lightboxPrev">&#10094;</button>
+  <button class="lightbox-close" id="lightboxClose" aria-label="Закрыть просмотр">&times;</button>
+  <button class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="Предыдущее изображение">&#10094;</button>
   <img id="lightboxImg" src="" alt="Скан графа знаний — увеличено">
-  <button class="lightbox-nav lightbox-next" id="lightboxNext">&#10095;</button>
+  <button class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="Следующее изображение">&#10095;</button>
 </div>
+</main>
 
 <footer class="mt-4">
   <div class="container">
