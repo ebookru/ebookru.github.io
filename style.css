@@ -85,14 +85,19 @@ body {
 .product-card {
   background: var(--card-bg);
   border-radius: 32px;
-  padding: 40px 28px;
+  padding: 48px 28px;
   height: 100%;
+  min-height: 420px;
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: flex-start;
   transition: transform 0.25s ease;
 }
+.product-card h3 { min-height: 62px; display: flex; align-items: center; }
+.product-card .product-price-label { min-height: 42px; display: flex; align-items: center; }
+.product-card .btn-buy { margin-top: auto; }
 .product-card:hover { transform: translateY(-6px); }
 .product-icon {
   width: 64px; height: 64px;
