@@ -123,14 +123,14 @@ body {
 .product-price-label { font-size: 0.85rem; color: var(--text-muted); margin-bottom: 4px; line-height: 1.5; }
 .product-price-value { font-size: 2rem; font-weight: 800; color: var(--text); margin-bottom: 20px; }
 .btn-buy {
-  background: var(--text);
+  background: #5b281b;
   color: var(--bg);
   border: none;
   border-radius: 999px;
   padding: 10px 32px;
   font-weight: 600;
 }
-.btn-buy:hover { background: var(--accent2); color: #fff; }
+.btn-buy:hover { background: #a92909; color: #fff; }
 .btn-buy:disabled { opacity: 0.4; }
 
 footer {
@@ -207,8 +207,8 @@ h1.product-title { font-weight: 800; font-size: 2rem; line-height: 1.3; letter-s
 .btn-pay.crypto { background: #950301; }
 .btn-pay.crypto:hover { background: #cb1816; }
 [data-theme="dark"] .btn-pay.crypto { background: #570d0c; }
-.btn-pay.cards { background: #c14d1f; }
-.btn-pay.cards:hover { background: #ff4b4b; }
+.btn-pay.cards { background: #d15210; }
+.btn-pay.cards:hover { background: #ff0c0c; }
 .buy-note { font-size: 0.82rem; color: var(--text-muted); margin-top: 14px; }
 
 .accordion-item { background: transparent; border: none; border-bottom: 1px solid var(--border); }
