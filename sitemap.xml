@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://ebookru.github.io/</loc>
+    <lastmod>2026-07-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://ebookru.github.io/product-ai.html</loc>
+    <lastmod>2026-07-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://ebookru.github.io/img/cover-ai.jpg</image:loc>
+      <image:title>Статьи об Искусственном Интеллекте — готовый Obsidian Vault</image:title>
+      <image:caption>Второй мозг по ИИ: 1861 переведённая и размеченная статья для Obsidian</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://ebookru.github.io/product-trading.html</loc>
+    <lastmod>2026-07-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://ebookru.github.io/img/cover-trading.jpg</image:loc>
+      <image:title>Книги и материалы для Трейдинга</image:title>
+      <image:caption>Сборник из 771 файла по трейдингу, инвестициям и криптовалюте</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://ebookru.github.io/product-programmers.html</loc>
+    <lastmod>2026-07-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://ebookru.github.io/img/cover-programmers.jpg</image:loc>
+      <image:title>Книги, обучающие материалы для Программистов</image:title>
+      <image:caption>Сборник из 701 файла по программированию и системному администрированию</image:caption>
+    </image:image>
+  </url>
+</urlset>
