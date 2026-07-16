@@ -1,4 +1,4 @@
-const toggle = document.getElementById('themeToggle');
+﻿const toggle = document.getElementById('themeToggle');
 const html = document.documentElement;
 toggle.addEventListener('click', () => {
   const current = html.getAttribute('data-theme');
@@ -10,6 +10,7 @@ toggle.addEventListener('click', () => {
 // --- Живой граф знаний ---
 (function () {
   const svg = document.getElementById('graphSvg');
+  if (!svg) return;
   const W = 500, H = 420;
   const styles = getComputedStyle(document.documentElement);
   const colors = ['--accent', '--accent2', '--text', '--bg-alt'];
