@@ -40,4 +40,60 @@
       <image:caption>Сборник из 701 файла по программированию и системному администрированию</image:caption>
     </image:image>
   </url>
+  <url>
+    <loc>https://ebookru.github.io/blog/index.html</loc>
+    <lastmod>2026-07-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://ebookru.github.io/blog/01-vtoroy-mozg-obsidian.html</loc>
+    <lastmod>2026-07-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://ebookru.github.io/img/blog-art-ai-01.avif</image:loc>
+      <image:title>Как использовать знания в статьях для Obsidian: второй мозг, который не забывает</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://ebookru.github.io/blog/02-second-brain-claude.html</loc>
+    <lastmod>2026-07-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://ebookru.github.io/img/blog-art-ai-02.avif</image:loc>
+      <image:title>Second Brain для Claude: что это такое и зачем он вам</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://ebookru.github.io/blog/03-md-format-ii-agenty.html</loc>
+    <lastmod>2026-07-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://ebookru.github.io/img/blog-art-ai-03.avif</image:loc>
+      <image:title>Почему ИИ-агенты используют формат Markdown</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://ebookru.github.io/blog/04-baza-statey-dlya-agentov.html</loc>
+    <lastmod>2026-07-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://ebookru.github.io/img/blog-art-ai-04.avif</image:loc>
+      <image:title>Как база статей в Obsidian помогает Claude, Codex, OpenClaw и другим агентам</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://ebookru.github.io/blog/05-layfhak-claude-obsidian.html</loc>
+    <lastmod>2026-07-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://ebookru.github.io/img/blog-art-ai-05.avif</image:loc>
+      <image:title>Лайфхак для мозга Claude: интеграция с Obsidian</image:title>
+    </image:image>
+  </url>
 </urlset>
