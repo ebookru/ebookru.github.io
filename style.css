@@ -23,12 +23,18 @@
   --surface: #574a45;
 }
 * { font-family: 'Inter', -apple-system, sans-serif; }
+html, body { height: 100%; }
 body {
   background: var(--bg);
   color: var(--text);
   transition: background 0.3s ease, color 0.3s ease;
   overflow-x: hidden;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
+main { flex: 1 0 auto; }
+footer { flex-shrink: 0; }
 .navbar { background: transparent !important; }
 .brand-name { font-weight: 700; font-size: 1.15rem; color: var(--text); }
 .brand-tagline { font-size: 0.72rem; color: var(--text-muted); display: block; margin-top: -3px; }
