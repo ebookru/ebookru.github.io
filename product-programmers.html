@@ -184,9 +184,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
   <div class="buy-box" id="buy">
     <div class="buy-price">Цена за весь архив: $<span class="buy-amount">55</span></div>
-    <button class="btn-pay crypto"><i class="bi bi-currency-bitcoin"></i> Оплатить криптой / межд. картой</button>
+    <button class="btn-pay crypto" id="cryptoPayBtn"><i class="bi bi-currency-bitcoin"></i> Payment in Crypto</button>
     <button class="btn-pay cards"><i class="bi bi-credit-card"></i> Оплата картой РФ</button>
     <div class="buy-note">Платить криптовалютой удобнее и быстрее — без ограничений и блокировок карт</div>
+    <div class="buy-note"><a href="find-purchase.html" class="find-purchase-link" target="_blank">Оплатили криптой, но не получили письмо? →</a></div>
   </div>
 
   <section class="split-section" style="border-top:none;">
@@ -218,6 +219,19 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
     </div>
   </section>
+</div>
+<div class="pay-modal-overlay" id="payModalOverlay">
+  <div class="pay-modal">
+    <button class="pay-modal-close" id="payModalClose" aria-label="Закрыть">&times;</button>
+    <h3>Оплата криптовалютой</h3>
+    <p class="pay-modal-desc">Укажите email — после подтверждения платежа сетью мы автоматически пришлём на него ссылку для скачивания архива.</p>
+    <form id="payForm">
+      <input type="email" id="payEmail" class="form-control" placeholder="you@example.com" required style="margin-bottom:14px;">
+      <button type="submit" class="btn-brand" style="width:100%;" id="payFormSubmit">Перейти к оплате</button>
+    </form>
+    <p class="pay-modal-note" id="payFormNote"></p>
+    <p class="pay-modal-note"><a href="find-purchase.html" target="_blank">Уже оплатили, но не получили письмо? →</a></p>
+  </div>
 </div>
 </main>
 
@@ -256,5 +270,53 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   });
 </script>
 
+<script>
+(function () {
+  const WORKER_ORIGIN = 'https://smart-things-payments.ebookru.workers.dev';
+  const PRODUCT = 'programmers';
+
+  const openBtn = document.getElementById('cryptoPayBtn');
+  const overlay = document.getElementById('payModalOverlay');
+  const closeBtn = document.getElementById('payModalClose');
+  const form = document.getElementById('payForm');
+  const submitBtn = document.getElementById('payFormSubmit');
+  const note = document.getElementById('payFormNote');
+
+  if (!openBtn) return;
+
+  openBtn.addEventListener('click', () => overlay.classList.add('active'));
+  closeBtn.addEventListener('click', () => overlay.classList.remove('active'));
+  overlay.addEventListener('click', (e) => { if (e.target === overlay) overlay.classList.remove('active'); });
+
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const email = document.getElementById('payEmail').value.trim();
+    submitBtn.disabled = true;
+    submitBtn.textContent = 'Создаём счёт…';
+    note.textContent = '';
+
+    try {
+      const resp = await fetch(WORKER_ORIGIN + '/api/create-order', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email, product: PRODUCT }),
+      });
+      const data = await resp.json();
+
+      if (data.invoice_url) {
+        window.location.href = data.invoice_url;
+      } else {
+        note.textContent = 'Не удалось создать счёт. Попробуйте ещё раз или напишите в поддержку.';
+        submitBtn.disabled = false;
+        submitBtn.textContent = 'Перейти к оплате';
+      }
+    } catch (err) {
+      note.textContent = 'Ошибка соединения. Попробуйте ещё раз.';
+      submitBtn.disabled = false;
+      submitBtn.textContent = 'Перейти к оплате';
+    }
+  });
+})();
+</script>
 </body>
 </html>
