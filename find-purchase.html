@@ -1,12 +1,23 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ru">
 <head>
 <meta charset="UTF-8">
+<meta name="yandex-verification" content="767aa36fb826621a" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Найти мою покупку | Smart Things Bookstore</title>
 <script>document.documentElement.setAttribute('data-theme', localStorage.getItem('theme') || 'light');</script>
+<title>Найти мою покупку | Smart Things Bookstore</title>
+<meta name="description" content="Найти мою покупку — Smart Things Bookstore">
+<link rel="icon" type="image/png" href="/img/favicon-96x96.png" sizes="96x96" />
 <link rel="icon" type="image/svg+xml" href="/img/favicon.svg" />
+<link rel="shortcut icon" href="/img/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png" />
+<meta name="apple-mobile-web-app-title" content="eBook RU" />
+<link rel="manifest" href="/img/site.webmanifest" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=optional" rel="stylesheet">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -16,36 +27,72 @@
       <span class="brand-name">Smart Things Bookstore</span>
       <span class="brand-tagline">готовые базы знаний для тех, кто идёт вперёд</span>
     </a>
+    <div class="d-flex align-items-center">
+      <div class="social-icons">
+        <a href="#" title="Telegram" aria-label="Telegram"><i class="bi bi-telegram"></i></a>
+        <a href="#" title="Boosty" aria-label="Boosty"><i class="bi bi-cup-hot"></i></a>
+        <a href="#" title="Bastyon" aria-label="Bastyon"><i class="bi bi-globe2"></i></a>
+        <a href="#" title="X" aria-label="X (Twitter)"><i class="bi bi-twitter-x"></i></a>
+      </div>
+      <button class="theme-toggle" id="themeToggle"><i class="bi bi-moon-stars"></i> Тема</button>
+    </div>
   </div>
 </nav>
 
 <main>
-<div class="container" style="max-width:560px;margin:60px auto;">
-  <h1 style="font-size:1.6em;margin-bottom:12px;">Найти мою покупку</h1>
-  <p style="color:var(--text-muted);margin-bottom:28px;">Если вы оплатили архив криптовалютой, но не получили письмо — введите email, который указывали при оплате, и выберите архив.</p>
+  <div class="breadcrumb-nav">
+    <a href="index.html">Каталог</a> / Найти мою покупку
+  </div>
 
-  <form id="find-form">
-    <div class="mb-3">
-      <label class="form-label" for="email">Email при оплате</label>
-      <input type="email" class="form-control" id="email" required placeholder="you@example.com">
-    </div>
-    <div class="mb-3">
-      <label class="form-label" for="product">Архив</label>
-      <select class="form-select" id="product" required>
-        <option value="ai">Статьи об Искусственном Интеллекте</option>
-        <option value="trading">Книги и материалы для Трейдинга</option>
-        <option value="programmers">Книги, обучающие материалы для Программистов</option>
-      </select>
-    </div>
-    <button type="submit" class="btn btn-brand" style="width:100%;">Проверить</button>
-  </form>
+  <div class="container" style="max-width:560px;margin:40px auto 60px;">
+    <h1 style="font-size:1.6em;margin-bottom:12px;">Найти мою покупку</h1>
+    <p style="color:var(--text-muted);margin-bottom:28px;">Если вы оплатили архив криптовалютой, но не получили письмо — введите email, который указывали при оплате, и выберите архив.</p>
 
-  <div id="result" style="margin-top:24px;"></div>
-</div>
+    <form id="find-form">
+      <div class="mb-3">
+        <label class="form-label" for="email">Email при оплате</label>
+        <input type="email" class="form-control" id="email" required placeholder="you@example.com">
+      </div>
+      <div class="mb-3">
+        <label class="form-label" for="product">Архив</label>
+        <select class="form-select" id="product" required>
+          <option value="ai">Статьи об Искусственном Интеллекте</option>
+          <option value="trading">Книги и материалы для Трейдинга</option>
+          <option value="programmers">Книги, обучающие материалы для Программистов</option>
+        </select>
+      </div>
+      <button type="submit" class="btn btn-brand" style="width:100%;">Проверить</button>
+    </form>
+
+    <div id="result" style="margin-top:24px;"></div>
+  </div>
 </main>
 
+<footer>
+  <div class="container">
+    <div class="d-flex flex-wrap justify-content-between align-items-center">
+      <div>Smart Things Bookstore<br>© 2026 Smart Things Bookstore</div>
+      <div>
+        <a href="index.html#catalog">Каталог</a>
+        <a href="#">О нас</a>
+        <a href="blog/index.html">Блог</a>
+      </div>
+      <div class="social-icons">
+        <a href="#" aria-label="Telegram"><i class="bi bi-telegram"></i></a>
+        <a href="#" aria-label="Boosty"><i class="bi bi-cup-hot"></i></a>
+        <a href="#" aria-label="Bastyon"><i class="bi bi-globe2"></i></a>
+        <a href="#" aria-label="X (Twitter)"><i class="bi bi-twitter-x"></i></a>
+      </div>
+    </div>
+    <div class="footer-legal">
+      Цифровой товар, доступ предоставляется сразу после оплаты. Возврат не предусмотрен для скачанных файлов.<br>
+      Материалы архивов собраны из открытых источников и не подпадают под авторские права.
+    </div>
+  </div>
+</footer>
+
+<script src="script.js" defer></script>
 <script>
-  // TODO: замените на реальный адрес вашего Cloudflare Worker после деплоя
   const WORKER_ORIGIN = 'https://smart-things-payments.ebookru.workers.dev';
 
   const form = document.getElementById('find-form');
@@ -70,7 +117,7 @@
       } else if (data.status === 'delivered') {
         resultEl.innerHTML = `<div class="buy-note" style="color:#2e7d32;">Оплата подтверждена, новая ссылка отправлена на почту.</div>`;
       } else if (data.status === 'pending') {
-        resultEl.innerHTML = `<div class="buy-note">Платёж пока не подтверждён сетью. Обычно это занимает от нескольких минут до часа — попробуйте проверить позже.</div>`;
+        resultEl.innerHTML = `<div class="buy-note" style="font-size:1.25em;">Платёж пока не подтверждён сетью. Обычно это занимает от нескольких минут до часа — попробуйте проверить позже.</div>`;
       } else {
         resultEl.innerHTML = `<div class="buy-note">Заказ с таким email и архивом не найден. Проверьте, тот ли email указывали при оплате, либо напишите нам в поддержку.</div>`;
       }
