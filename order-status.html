@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Статус заказа | Smart Things Bookstore</title>
+<script>document.documentElement.setAttribute('data-theme', localStorage.getItem('theme') || 'light');</script>
+<link rel="icon" type="image/svg+xml" href="/img/favicon.svg" />
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container" style="max-width:560px;margin:80px auto;text-align:center;">
+  <h1 style="font-size:1.6em;margin-bottom:16px;" id="title">Спасибо за оплату!</h1>
+  <p style="color:var(--text-muted);" id="text">
+    Как только сеть подтвердит платёж (обычно от нескольких минут до часа), мы автоматически пришлём ссылку на скачивание на указанный email.
+  </p>
+  <p style="margin-top:24px;"><a href="find-purchase.html" class="link-more">Проверить статус вручную →</a></p>
+</div>
+<script>
+  const params = new URLSearchParams(location.search);
+  if (params.get('cancelled')) {
+    document.getElementById('title').textContent = 'Оплата не завершена';
+    document.getElementById('text').textContent = 'Платёж был отменён или не завершён. Вы можете попробовать оплатить снова на странице архива.';
+  }
+</script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Скачивание архива | Smart Things Bookstore</title>
+<script>document.documentElement.setAttribute('data-theme', localStorage.getItem('theme') || 'light');</script>
+<link rel="icon" type="image/svg+xml" href="/img/favicon.svg" />
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container" style="max-width:560px;margin:80px auto;text-align:center;">
+  <h1 style="font-size:1.6em;margin-bottom:20px;">Готовим ссылку на скачивание…</h1>
+  <p id="status-text" style="color:var(--text-muted);">Секунду, перенаправляем вас на файл.</p>
+</div>
+
+<script>
+  // TODO: замените на реальный адрес вашего Cloudflare Worker после деплоя
+  const WORKER_ORIGIN = 'https://smart-things-payments.ebookru.workers.dev';
+
+  const params = new URLSearchParams(location.search);
+  const token = params.get('token');
+  const statusEl = document.getElementById('status-text');
+
+  if (!token) {
+    statusEl.textContent = 'Ссылка неполная — отсутствует токен. Проверьте письмо ещё раз.';
+  } else {
+    window.location.replace(`${WORKER_ORIGIN}/api/download?token=${encodeURIComponent(token)}`);
+  }
+</script>
+</body>
+</html>
