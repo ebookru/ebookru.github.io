@@ -455,3 +455,14 @@ h1.product-title { font-weight: 800; font-size: 2rem; line-height: 1.3; letter-s
 .find-purchase-link:hover { color: #950301; }
 [data-theme="dark"] .find-purchase-link { color: #aaa; }
 [data-theme="dark"] .find-purchase-link:hover { color: #f7fd0d; }
+
+.article-freebie {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 24px;
+  margin: 4px 0 28px;
+}
+.article-freebie h3 { font-size: 1.1em; margin-bottom: 8px; }
+.article-freebie p { color: var(--text-muted); margin-bottom: 16px; }
+.article-freebie .btn-brand { display: inline-block; text-decoration: none; }
